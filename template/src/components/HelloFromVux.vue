@@ -1,16 +1,16 @@
 <template>
   <div class="vux-demo">
-    <img class="logo" src="./assets/vux_logo.png">
+    <img class="logo" src="../assets/vux_logo.png">
     <h1>\{{ msg }}</h1>
-    <group title="cell demo">
-      <cell title="Vux" value="Cool" is-link></cell>
-    </group>
   </div>
+  <group title="cell demo">
+    <cell title="Vux" value="Cool" is-link></cell>
+  </group>
 </template>
 
 <script>
-import Group from 'vux/src/component/group'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import Cell from 'vux/src/component/cell'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Group from 'vux/src/components/group'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Cell from 'vux/src/components/cell'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default {
   components: {

@@ -6,4 +6,9 @@
 
 <style lang="less">
 @import '~vux/src/styles/reset';
+
+body {
+  background-color: #fbf9fe;
+}
 </style>
+
