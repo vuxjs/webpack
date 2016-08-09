@@ -47,7 +47,7 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue'
       },
-      vuxLoader.getBabelLoader(),
+      vuxLoader.getBabelLoader(projectRoot),
       {
         test: /\.js$/,
         loader: 'babel',
