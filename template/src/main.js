@@ -3,6 +3,9 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import Home from './components/HelloFromVux'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import VueRouter from 'vue-router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
+const FastClick = require('fastclick')
+FastClick.attach(document.body)
+
 Vue.use(VueRouter){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 const router = new VueRouter(){{#if_eq lintConfig "airbnb"}};{{/if_eq}}

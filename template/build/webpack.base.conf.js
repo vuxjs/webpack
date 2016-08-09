@@ -2,6 +2,7 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
+var vuxLoader = require('vux-loader')
 
 module.exports = {
   entry: {
@@ -46,15 +47,12 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue'
       },
+      vuxLoader.getBabelLoader(),
       {
         test: /\.js$/,
         loader: 'babel',
         include: projectRoot,
         exclude: /node_modules/
-      },
-      {
-        test: /vux.src.*?js$/,
-        loader: 'babel'
       },
       {
         test: /\.json$/,

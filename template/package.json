@@ -32,6 +32,8 @@
     "css-loader": "^0.23.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.2",
+    "vux-loader": "^0.0.2",
+    "fastclick": "^1.0.6",
     {{#lint}}
     "eslint": "^2.10.2",
     "eslint-friendly-formatter": "^2.0.5",
